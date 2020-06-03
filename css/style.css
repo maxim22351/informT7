@@ -47,42 +47,51 @@
 }
 
 .submit {
+  color: #2B73FF;
 	margin: 0 auto;
 	width: 40%;
-	margin-top: 10px;
+  margin-top: 10px;
+  border: solid 2px #2B73FF;
+  background-color: #fff;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+.submit:hover{
+  transition: 0.5s all ease;
+  background-color: #2B73FF;
+  color: #fff;
 }
 
 .button {
 	background-color: #fff;
 	border: 0;
 	border-radius: 5px;
-    height: 30px;
-    cursor: pointer;
+  height: 30px;
+  cursor: pointer;
 }
 
 
 .fileform { 
-    background-color: #2B73FF;
-    border: 2px solid #2B73FF;
-    border-radius: 2px;
-    cursor: pointer;
-    height: 30px;
-    overflow: hidden;
-    padding: 2px;
-    position: relative;
-    text-align: left;
-    vertical-align: middle;
-    width: 235px;
+  background-color: #2B73FF;
+  /* border: 1px solid #2B73FF; */
+  cursor: pointer;
+  height: 28px;
+  overflow: hidden;
+  padding: 3px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  width: 235px;
 	border-radius: 5px;
 	transition: 0.2s all ease;
-	cursor: pointer;
 }
 
 
  
 .fileform .selectbutton { 
     background-color: #2B73FF;
-    border: 1px solid #2B73FF;
+    /* border: 0px solid #2B73FF; */
     color: #FFFFFF;
     float: right;
     font-size: 16px;
@@ -143,8 +152,8 @@ label{
   .custom-checkbox+label::before {
     content: '';
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     flex-shrink: 0;
     flex-grow: 0;
     border: 2px solid #0b76ef;
