@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Название страницы</title>
+    <meta name="description" content="Описание страницы" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="/img/favicon.png">
+    <script type="text/javascript" src="js/bootstrap.min.min.js"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+ <body>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top high">
+  <div class="container">
+    <a class="navbar-brand brand" href="#">Start Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-light">Работа водителем и курьером</h1>
+        <p class="lead">Подключение за пять минут!</p>
+        <p><input type="button" class="button" value="Подключиться"></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="font-weight-light">Анкета на подключение водителя такси</h2>
+    	<div class="block">
+	    	<div class="container">
+	    		<p>Водитель:</p>
+	    	  <input type="text" class="text-in" placeholder="Фамилия, Имя, Отчество"><br/ >
+	    	</div>
+	    	<div class="container">
+	      	<div class="row">
+	    		  <div class="col-sm">
+	      	    <input type="text" class="text-out" placeholder="Город">
+	          </div>
+	          <div class="col-sm">
+	            <input type="text" class="text-out" placeholder="Номер телефона">
+	          </div>
+	          <div class="col-sm">
+	            <input type="text" class="text-out" placeholder="Серия в/у">
+	          </div>
+	        </div>
+        </div>
+        <div class="container">
+	      	<div class="row">
+	    		  <div class="col-sm">
+	      	    <input type="text" class="text-out" placeholder="Номер в/у">
+	          </div>
+	          <div class="col-sm">
+	            <input type="date" class="text-out" placeholder="Дата выдачи">
+	          </div>  
+	        </div>
+        </div>
+    </div>
+    <div class="block">
+    	<div class="container">
+    	<p>Автомобиль:</p>
+			<div class="container">
+	      	<div class="row">
+	    		  <div class="col-sm">
+	      	    <input type="text" class="text-out" placeholder="Марка а/м">
+	          </div>
+	          <div class="col-sm">
+	            <input type="text" class="text-out" placeholder="Модель а/м">
+	          </div>
+	          <div class="col-sm">
+	            <select class="text-out">
+	            	<option disabled selected>Тип кузова</option>
+							  <option>Седан</option>
+							  <option>Хэчбэк</option>
+							  <option>Универсал</option>
+							  <option>Минивэн</option>
+							  <option>Микроавтобус</option>
+							  <option>Другой</option>
+							</select>
+	          </div>
+	        </div>
+	        <div class="row">
+	    		  <div class="col-sm">
+	      	    <input type="text" class="text-out" placeholder="Цвет а/м">
+	          </div>
+	          <div class="col-sm">
+	            <input type="text" class="text-out" placeholder="Госномер а/м">
+	          </div>
+	          <div class="col-sm">
+	            <input type="text" class="text-out" placeholder="Год выпуска а/м">
+	          </div>
+	        </div>
+        </div>
+      </div>
+    </div>
+		<div class="block">
+    	<div class="container">
+    	<p>Лицензия на деятельность такси:</p>	
+			<div class="container">
+	      	<div class="row">
+	    		  <div class="col-sm">
+	      	    <input type="text" class="text-out" placeholder="Номер">
+	          </div>
+	          <div class="col-sm">
+	            <input type="text" class="text-out" placeholder="Регион">
+	          </div>
+	          <div class="col-sm">
+	            <input type="text" class="text-out" placeholder="Серия">
+	          </div>
+	        </div>
+        </div>
+    </div></div>
+
+   <div class="block">
+    	<div class="container">
+    	<p>Дополнительные услуги:</p>	 
+			<div class="container">
+	      	<div class="row">
+	    		  <div class="col-sm">
+	      	    <input type="checkbox" /> Велосипед<br/ >
+	      	    <input type="checkbox" /> 6 мест<br/ >
+	      	    <input type="checkbox" /> Животные<br/ >
+	      	    <input type="checkbox" /> Кондиционер<br/ >
+	      	    <input type="checkbox" /> БСО (ЧЕК)<br/ >
+	          </div>
+	          <div class="col-sm">
+	            <input type="checkbox" /> Бустер<br/ >
+	            <input type="checkbox" /> Лыжи<br/ >
+	            <input type="checkbox" /> Универсал<br/ >
+	            <input type="checkbox" /> Курить<br/ >
+	            <input type="checkbox" /> Wi-Fi<br/ >
+	          </div>
+	          <div class="col-sm">
+	            <input type="checkbox" /> Детское кресло<br/ >
+	            <input type="checkbox" /> Люлька<br/ >
+	            <input type="checkbox" /> Водитель-женщина<br/ >
+	            <input type="checkbox" /> POST-Терминал<br/ >
+	          </div>
+	        </div>
+        </div>
+    </div></div>
+
+		<div class="block">
+    	<div class="container">
+    	<p>Копии документов:</p>
+    	<div class="container">
+	      	<div class="row">
+	    		  <div class="col-sm">
+	      	    Паспорт (фотография)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+							Паспорт (прописка)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+	      	    СТС (лицевая)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+							СТС (задняя)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+	      	 </div>
+	      	 <div class="col-sm">
+	      	    В/У (фотография)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+							Лицензия (лицевая сторона)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+	      	    Фото чека (БСО, квитанция)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+							Фото чека (детское кресло)
+	      	    <input type="file" class="text-out button" accept="image/x-png,image/gif,image/jpeg"><br>
+	      	 </div>
+
+
+
+
+	          
+	        </div>
+        </div>
+    </div>	</div> 
+
+<div class="block">
+	<input type="checkbox" />  Я принимаю все условия договора и даю свое согласие на обработку моих персональных данных, 
+    в соответствии с Федеральным законом от 27.07.2006 г. №152-ФЗ «О персональных данных», на условиях и для целей, 
+  определенных политикой конфиденциальности.<br>
+  <p align="center"><input type="submit" class="submit" value="Отправить"></p>
+  </div>
+</section>
+
+</body>
+</html>

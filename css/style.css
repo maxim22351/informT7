@@ -1,0 +1,59 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.high {
+	height: 50px;
+}
+
+.brand {
+	font-size: 26px;
+}
+
+.nav-item {
+	font-size: 20px;
+}
+
+.block {
+	background-color: #a5d9f1;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.text-in {
+	width: 100%;
+	margin-bottom: 5px;
+	height:30px;
+	border: 0;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.text-out {
+	width: 100%;
+	margin-bottom: 5px;
+	height:30px;
+	border: 0;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.submit {
+	margin: 0 auto;
+	width: 40%;
+	margin-top: 10px;
+}
+
+.button {
+	background-color: #fff;
+	border: 0;
+	border-radius: 5px;
+	height: 30px;
+}
