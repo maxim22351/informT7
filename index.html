@@ -182,54 +182,54 @@
 	    		  <div class="col-sm">
 	      	    Паспорт (фотография)
 	      	    <div class="fileform">
-					<div id="fileformlabel foto"></div>
+					<div id="passport_photo" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="passport_photo(this.value);" />
 				</div>
 				<br>
 				Паспорт (прописка)
 				<div class="fileform">
-					<div id="fileformlabel"></div>
+					<div id="passport_rescription" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="passport_rescription(this.value);" />
 				</div><br>
 	      	    СТС (лицевая)
 	      	    <div class="fileform">
-					<div id="fileformlabel"></div>
+					<div id="facial" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="facial(this.value);" />
 				</div><br>
 				СТС (задняя)
 				<div class="fileform">
-					<div id="fileformlabel"></div>
+					<div id="back" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="back(this.value);" />
 				</div><br>
 	      	 </div>
 	      	 <div class="col-sm">
 	      	    В/У (фотография)
 	      	    <div class="fileform">
-					<div id="fileformlabel"></div>
+					<div id="foto" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="foto(this.value);" />
 				</div><br>
 							Лицензия (лицевая сторона)
 				<div class="fileform">
-					<div id="fileformlabel"></div>
+					<div id="front_side" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="front_side(this.value);" />
 				</div><br>
 	      	    Фото чека (БСО, квитанция)
 	      	    <div class="fileform">
-					<div id="fileformlabel"></div>
+					<div id="check_photo" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="check_photo(this.value);" />
 				</div><br>
 							Фото чека (детское кресло)
 				<div class="fileform">
-					<div id="fileformlabel"></div>
+					<div id="baby_chair" class="open"></div>
 					<div class="selectbutton">Обзор...</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="baby_chair(this.value);" />
 				</div><br>
 	      	 </div>
 
@@ -253,7 +253,7 @@
 
 <script>
 
-	function getName (str){
+	function passport_photo (str){
 		if (str.lastIndexOf('\\')){
 			var i = str.lastIndexOf('\\')+1;
 		}
@@ -261,10 +261,86 @@
 			var i = str.lastIndexOf('/')+1;
 		}						
 		var filename = str.slice(i);			
-		var uploaded = document.getElementById("fileformlabel");
+		var uploaded = document.getElementById("passport_photo");
 		uploaded.innerHTML = filename;
-	}
-	
+	};
+	function passport_rescription (str){
+		if (str.lastIndexOf('\\')){
+			var i = str.lastIndexOf('\\')+1;
+		}
+		else{
+			var i = str.lastIndexOf('/')+1;
+		}						
+		var filename = str.slice(i);			
+		var uploaded = document.getElementById("passport_rescription");
+		uploaded.innerHTML = filename;
+	};
+	function facial (str){
+		if (str.lastIndexOf('\\')){
+			var i = str.lastIndexOf('\\')+1;
+		}
+		else{
+			var i = str.lastIndexOf('/')+1;
+		}						
+		var filename = str.slice(i);			
+		var uploaded = document.getElementById("facial");   
+		uploaded.innerHTML = filename;
+	};
+	function back (str){
+		if (str.lastIndexOf('\\')){
+			var i = str.lastIndexOf('\\')+1;
+		}
+		else{
+			var i = str.lastIndexOf('/')+1;
+		}						
+		var filename = str.slice(i);			
+		var uploaded = document.getElementById("back");   
+		uploaded.innerHTML = filename;
+	};
+	function foto (str){
+		if (str.lastIndexOf('\\')){
+			var i = str.lastIndexOf('\\')+1;
+		}
+		else{
+			var i = str.lastIndexOf('/')+1;
+		}						
+		var filename = str.slice(i);			
+		var uploaded = document.getElementById("foto");   
+		uploaded.innerHTML = filename;
+	};
+	function front_side (str){
+		if (str.lastIndexOf('\\')){
+			var i = str.lastIndexOf('\\')+1;
+		}
+		else{
+			var i = str.lastIndexOf('/')+1;
+		}						
+		var filename = str.slice(i);			
+		var uploaded = document.getElementById("front_side");   
+		uploaded.innerHTML = filename;
+	};
+	function check_photo (str){
+		if (str.lastIndexOf('\\')){
+			var i = str.lastIndexOf('\\')+1;
+		}
+		else{
+			var i = str.lastIndexOf('/')+1;
+		}						
+		var filename = str.slice(i);			
+		var uploaded = document.getElementById("check_photo");   
+		uploaded.innerHTML = filename;
+	};
+	function baby_chair (str){
+		if (str.lastIndexOf('\\')){
+			var i = str.lastIndexOf('\\')+1;
+		}
+		else{
+			var i = str.lastIndexOf('/')+1;
+		}						
+		var filename = str.slice(i);			
+		var uploaded = document.getElementById("baby_chair");   
+		uploaded.innerHTML = filename;
+	};
 </script>
 
 </body>

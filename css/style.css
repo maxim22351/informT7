@@ -111,7 +111,7 @@
 }
 
 
-.fileform #fileformlabel { 
+.fileform .open { 
     background-color: #FFFFFF;
     float: left;
     height: 22px;
